@@ -1,0 +1,86 @@
+/* :root {
+    --background-color: rgba(3, 37, 65);
+    --white: #ffffff;
+    --color-logo: #087ea4;
+    --black: #000000;
+    --customed: #7f5563;
+} */
+
+
+/* ----- menu ----- */
+.Menu {
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--background-color);
+    color: var(--white);
+}
+
+/* ----- Box-left ----- */
+
+.Box-left {
+    display: flex;
+    justify-content: space-around;
+}
+
+.Box-menu-logo-content {
+    margin: 24px 20px 16px 20px;
+    font-weight: 600;
+    align-items: center;
+    align-self: center;
+    color: var(--color-logo);
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+.Box-menu-logo-content {
+    cursor: pointer;
+}
+
+.Box-menu {
+    margin: 15px 20px 15px 20px;
+    font-weight: 600;
+    align-items: center;
+    align-self: center;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+.Box-menu:hover {
+    cursor: pointer;
+}
+
+/* Box-drop*/
+
+.Box-drop {
+    position: absolute;
+    color: var(--black);
+    background-color: var(--white);
+    padding: 20px 20px 20px 20px;
+    margin: 15px 0px 0px 0px;
+    z-index: 2;
+    width: 130px;
+    border-radius: 4px;
+    font-weight: 500;
+    border: 1px solid rgba(0, 0, 0, .15);
+}
+
+.Box-menu:hover {
+    display: block;
+}
+
+.bi-plus {
+    color: var(--white);
+
+}
+
+.bi-search {
+    color: var(--color-logo);
+}
+
+
+/* ----- Box-right ----- */
+
+.Box-right {
+    display: flex;
+    justify-content: space-around;
+}
