@@ -28,19 +28,23 @@ const homePage = (req, res) => {
         }
     ]
     return res.json({ code: 200, msg: 'Success', data: listFilms })
-}
+};
 
-const menu = ((req, res) => {
+const menu = (req, res) => {
     const listMenu = {
 
     }
 
 
     return res.json({ code: 200, msg: 'Success', data: null });
-})
+};
 
+const banners = (req, res) => {
+    return res.json({ code: 200, msg: "success", data: null });
+};
 
 module.exports = {
     homePage,
     menu,
+    banners,
 }

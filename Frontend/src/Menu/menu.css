@@ -10,7 +10,7 @@
 /* ----- menu ----- */
 .Menu {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     background-color: var(--background-color);
     color: var(--white);
 }

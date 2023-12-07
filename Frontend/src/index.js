@@ -5,14 +5,26 @@ import './index.css';
 import reportWebVitals from './reportWebVitals';
 import Home from './Home/home';
 import Menu from './Menu/menu';
-// import Menu from './aaa';
+import Banners from './BANNERS/banners';
+import Trending from './TRENDING/trending';
+import RouterCustom from './routes/RouterCustom'
+import { BrowserRouter } from 'react-router-dom';
+// import App from './App2';
+
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     {/* <App /> */}
     {/* <Home /> */}
-    <Menu />
+
+    {/* <Menu /> */}
+    <BrowserRouter>
+      <RouterCustom />
+    </BrowserRouter>
+    <Banners />
+    <Trending />
   </React.StrictMode>
 );
 

@@ -1,0 +1,11 @@
+/* -----           ----- */
+#body {
+    display: flex;
+    justify-content: center;
+}
+
+/* -----     Title      ----- */
+.Title {
+    display: flex;
+    justify-content: center;
+}
