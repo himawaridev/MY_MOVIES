@@ -1,0 +1,46 @@
+#Footer {
+    background-color: var(--background-color);
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.Left {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+}
+
+.Left-name {
+    color: var(--bluer);
+    font-size: 15px;
+    font-weight: 700;
+    background-color: var(--white);
+    padding: 10px 20px 10px 20px;
+    margin: 10px 0px 0px 0px;
+    border-radius: 5px;
+}
+
+.Left-name:hover {
+    cursor: pointer;
+}
+
+.Right {
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+    padding: 110px 0px 110px 0px;
+}
+
+.Right-box {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin: 0px 20px 0px 20px;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.Right-box span {
+    padding: 5px 10px 5px 10px;
+}

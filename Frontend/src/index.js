@@ -9,7 +9,13 @@ import Banners from './BANNERS/banners';
 import Trending from './TRENDING/trending';
 import RouterCustom from './routes/RouterCustom'
 import { BrowserRouter } from 'react-router-dom';
+import Footer from './Footer/footer';
 // import App from './App2';
+import Blog from './pages/Blog/Blog';
+import Trailers from './TRAILERS/trailers';
+import Populer from './POPULAR/popular'
+import Join from './JOIN/join'
+
 
 
 
@@ -20,11 +26,18 @@ root.render(
     {/* <Home /> */}
 
     {/* <Menu /> */}
-    <BrowserRouter>
+    {/* <BrowserRouter>
       <RouterCustom />
-    </BrowserRouter>
+    </BrowserRouter> */}
+    <Menu />
     <Banners />
     <Trending />
+    {/* <Blog /> */}
+    <Trailers />
+    <Populer />
+
+
+    <Footer />
   </React.StrictMode>
 );
 

@@ -15,7 +15,7 @@ function Menu(props) {
     useEffect(() => {
         axios.get("http://localhost:5000/menu")
             .then((response) => {
-                console.log("response", response);
+                console.log("response: ", response);
             })
             .catch((err) => console.log("error", err));
     });

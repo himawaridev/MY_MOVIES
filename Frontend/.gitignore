@@ -1,3 +1,9 @@
+# package
+.package-lock.json
+.package
+.gitignore
+
+
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
 # dependencies
@@ -21,7 +27,3 @@ node_modules
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-
-# package
-package-lock.json
-package

@@ -1,0 +1,73 @@
+#Trailers {
+    /* width: 65%; */
+    margin: 120px 335px 0px 335px;
+
+    /* border: 1px solid black; */
+    /* -----     Title      ----- */
+    .Title {
+        display: flex;
+        width: 65%;
+        margin: 0px 0px 20px 0px
+    }
+
+    .Title-Name {
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+    .Wrapper {
+        display: flex;
+        justify-content: center;
+        border: 1px solid var(--black);
+        border-radius: 30px;
+        margin: 0px 0px 0px 20px;
+        align-self: centers;
+    }
+
+    .Title-content {
+        border-radius: 30px;
+        padding: 4px 20px 4px 20px;
+        font-size: 14px;
+        font-weight: 500;
+        background-color: linear-gradient(to right, #c0fecf 0, #1ed5a9 100%);
+        -webkit-user-select: none;
+        user-select: none;
+    }
+
+    .Title-content:hover {
+        cursor: pointer;
+    }
+
+    .Active-tabs {
+        color: #1ed5a9;
+        background-color: var(--black);
+    }
+
+    /* -----     Content      ----- */
+
+    .Content {
+        width: 100%;
+        overflow-x: scroll;
+    }
+
+    .Active-content {
+        display: block;
+        width: 100%;
+    }
+
+    .Active-content-data {
+        display: flex;
+        justify-content: space-between;
+        z-index: 1;
+    }
+
+    .Active-content-hover {
+        position: absolute;
+        z-index: 2;
+        margin: -246px 0px 0px 0px;
+    }
+
+    .Show-content {
+        display: none;
+    }
+}
