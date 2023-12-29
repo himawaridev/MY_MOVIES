@@ -1,42 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-// import App from './App';
 import reportWebVitals from './reportWebVitals';
-import Home from './Home/home';
-import Menu from './Menu/menu';
-import Banners from './BANNERS/banners';
-import Trending from './TRENDING/trending';
 import RouterCustom from './routes/RouterCustom'
 import { BrowserRouter } from 'react-router-dom';
 import Footer from './Footer/footer';
-// import App from './App2';
-import Blog from './pages/Blog/Blog';
-import Trailers from './TRAILERS/trailers';
-import Populer from './POPULAR/popular'
-import Join from './JOIN/join'
-
 
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    {/* <App /> */}
-    {/* <Home /> */}
-
-    {/* <Menu /> */}
-    {/* <BrowserRouter>
+    <BrowserRouter>
       <RouterCustom />
-    </BrowserRouter> */}
-    <Menu />
-    <Banners />
-    <Trending />
-    {/* <Blog /> */}
-    <Trailers />
-    <Populer />
-
-
+    </BrowserRouter>
     <Footer />
   </React.StrictMode>
 );

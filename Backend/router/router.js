@@ -8,6 +8,10 @@ const {
     trending,
     trailers,
     popular,
+    join,
+    progress,
+    getPosts,
+    createPost
 } = require('../controller/homeController'); // khai bao ten router cho file homController.js 
 const router = express.Router();
 
@@ -18,8 +22,10 @@ router.get('/banners', banners);
 router.get('/trending', trending);
 router.get('/trailers', trailers);
 router.get('/popular', popular);
-
-
+router.get('/join', join);
+router.get('/progress', progress);
+router.get('/posts', getPosts);
+router.post('/posts', createPost);
 
 
 // xuat ra router dung cho controller

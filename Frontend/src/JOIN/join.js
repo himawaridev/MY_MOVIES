@@ -1,61 +1,55 @@
-// import React from 'react';
-// import ReactDOM from 'react-dom';
-// import { Modal } from 'react-modal';
-// import "./join.scss";
+// https://www.npmjs.com/package/react
+import { useState, useEffect } from "react";
+
+// https://www.npmjs.com/package/axios // call data from backend
+import axios from "axios";
+
+// Any:
+import "./join.scss";
 
 
-// const customStyles = {
-//     content: {
-//         top: '50%',
-//         left: '50%',
-//         right: 'auto',
-//         bottom: 'auto',
-//         marginRight: '-50%',
-//         transform: 'translate(-50%, -50%)',
-//     },
-// };
+const Join = () => {
+    //---------------------------------------------- Check data from be ----------------------------------------------//
+    const [join, setJoin] = useState([]);
+    useEffect(() => {
+        axios
+            .get("http://localhost:5000/join")
+            .then((response) => {
+                console.log("response: ", response);
+                if (response.data && response.data.data.length > 0) {
+                    setJoin(response.data.data);
+                }
+            })
+            .catch((err) => console.log("error: ", err));
+    }, []);
 
-// Modal.setAppElement('#yourAppElement');
 
-// function Join() {
-//     let subtitle;
-//     const [modalIsOpen, setIsOpen] = React.useState(false);
-
-//     function openModal() {
-//         setIsOpen(true);
-//     }
-
-//     function afterOpenModal() {
-//         // references are now sync'd and can be accessed.
-//         subtitle.style.color = '#f00';
-//     }
-
-//     function closeModal() {
-//         setIsOpen(false);
-//     }
-
-//     return (
-//         <div>
-//             <button onClick={openModal}>Open Modal</button>
-//             <Modal
-//                 isOpen={modalIsOpen}
-//                 onAfterOpen={afterOpenModal}
-//                 onRequestClose={closeModal}
-//                 style={customStyles}
-//                 contentLabel="Example Modal"
-//             >
-//                 <h2 ref={(_subtitle) => (subtitle = _subtitle)}>Hello</h2>
-//                 <button onClick={closeModal}>close</button>
-//                 <div>I am a modal</div>
-//                 <form>
-//                     <input />
-//                     <button>tab navigation</button>
-//                     <button>stays</button>
-//                     <button>inside</button>
-//                     <button>the modal</button>
-//                 </form>
-//             </Modal>
-//         </div>
-//     );
-// }
-// export default Join;
+    const renderJoin = () => {
+        return join.map((item, index) => {
+            return (
+                <div className="item" key={index}>
+                    <img className="item-image" src={item.image} alt="Error"></img>
+                    <div className="Container">
+                        <div className="Left">
+                            <div className="item-title">{item.title}</div>
+                            <div className="item-description">{item.description}</div>
+                            <div className="item-signup">{item.signup}</div>
+                        </div>
+                        <div className="Right">
+                            <li className="item-tip">{item.tip1}</li>
+                            <li className="item-tip">{item.tip2}</li>
+                            <li className="item-tip">{item.tip3}</li>
+                            <li className="item-tip">{item.tip4}</li>
+                            <li className="item-tip">{item.tip5}</li>
+                            <li className="item-tip">{item.tip6}</li>
+                        </div>
+                    </div>
+                </div>
+            )
+        })
+    }
+    return (
+        <div id="Join">{renderJoin()}</div>
+    )
+}
+export default Join

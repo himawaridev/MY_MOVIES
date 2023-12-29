@@ -3,31 +3,31 @@
     margin: 120px 335px 0px 335px;
     /* border: 1px solid black; */
     /* -----     Title      ----- */
-    .Title-Name {
+    .Title {
+        display: flex;
+        width: 65%;
+        margin: 0px 0px 20px 0px
+    }
+    .Title-name {
         font-size: 20px;
         font-weight: 600;
-    }
-    
-    .Wrapper {
-        display: flex;
-        // justify-content: center;
-        // border: 1px solid var(--black);
-        border-radius: 30px;
-        margin: 0px 0px 0px 20px;
         align-self: centers;
     }
     
-    .Title-content {
-        border-radius: 30px;
-        padding: 4px 20px 4px 20px;
+    .Wrapper {
         font-size: 14px;
         font-weight: 500;
-        background-color: linear-gradient(to right, #c0fecf 0, #1ed5a9 100%);
+        border-radius: 30px;
+        padding: 4px 20px 4px 20px;
+        margin: 0px 0px 0px 20px;
+        align-self: centers;
+        color: #1ed5a9;
+        background-color: var(--black);
         -webkit-user-select: none;
         user-select: none;
     }
     
-    .Title-content:hover {
+    .Wrapper:hover {
         cursor: pointer;
     }
     
@@ -43,15 +43,54 @@
         overflow-x: scroll;
     }
     
-    .Active-content {
+    .Active-content-left {
         display: block;
         display: flex;
         justify-content: space-between;
         width: 100%;
     }
+    .Active-content-right {
+        
+    }
+
+    /* -----     item      ----- */
     
-    .Show-content {
-        display: none;
+    .item {
+        display: flex;
+        flex-direction: column;
+        margin: 0px 15px 0px 0px;
+    }
+    
+    .item-image {
+        width: 150px;
+        height: 225px;
+        border-radius: 10px;
+    }
+    
+    .item-statistical {
+        width: 40px !important;
+        font-weight: 650 !important;
+        background-color: #000000 !important;
+        border-radius: 50% !important;
+        border: 2px solid #000000 !important;
+        margin: -25px 0px 0px 10px !important;
+    }
+    
+    .item-name {
+        font-size: 14px;
+        font-weight: 700;
+        margin: 10px 0px 0px 0px;
+    }
+    
+    .item-date {
+        font-size: 13px;
+        font-weight: 400;
+        margin: 5px 0px 5px 0px;
+    }
+    //
+    .item2-notification {
+        font-size: 15px;
+        font-weight: 400;
     }
 }
 

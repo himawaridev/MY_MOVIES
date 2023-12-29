@@ -1,0 +1,82 @@
+#Join {
+    margin: 120px 335px 0px 335px;
+
+    /* -----     item      ----- */
+
+    .item {
+        padding: 0px 0px 150px 0px;
+        color: var(--white);
+    }
+
+    .Container {
+        display: flex;
+        z-index: 2;
+        padding: 40px 40px 40px 40px;
+        
+    }
+
+    .item-image {
+        position: absolute;
+        max-width: 65%;
+        margin: 0px 0px 50px 0px;
+        z-index: 1;
+        -webkit-user-select: none;
+        user-select: none;
+    }
+
+    .Left {
+        z-index: 2;
+        flex: 2.5;
+    }
+
+    .item-title {
+        font-size: 30px;
+        font-weight: 700;
+    }
+
+    .item-description {
+        margin: 20px 0px 20px 0px;
+        font-size: 16px;
+        width: 640px;
+        opacity: 0.8;
+    }
+
+    .item-signup {
+        padding: 10px 20px 10px 20px;
+        border: 1px solid #805be7;
+        border-radius: 4px;
+        background-color: #805be7;
+        display: flex;
+        align-self: flex-start;
+        align-items: center;
+        font-size: 15px;
+        font-weight: 600;
+    }
+    
+    .item-signup {
+        cursor: pointer;
+        -webkit-user-select: none;
+        user-select: none;
+    }
+
+    .Right {
+        z-index: 2;
+        flex: 1.5;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .item-tip {
+        opacity: 0.8;
+    }
+
+    /* -----     Join      ----- */
+
+    .Join {
+
+    }
+}
+
+.test1112 {
+    margin-bottom: 0;
+}

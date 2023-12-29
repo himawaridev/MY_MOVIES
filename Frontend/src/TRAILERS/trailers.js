@@ -2,6 +2,7 @@ import axios from "axios";
 import { useState, useEffect } from "react";
 import { Player } from "video-react";
 import "./trailers.scss";
+import "./trailers_responsive.scss";
 
 
 // import Video from ""

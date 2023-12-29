@@ -1,9 +1,16 @@
+// https://www.npmjs.com/package/react
 import React, { useState, useEffect } from "react";
-import "./trending.scss";
-import "./trending_responsive.scss";
+
+// https://www.npmjs.com/package/axios // call data from backend
 import axios from "axios";
+
+// https://www.npmjs.com/package/react-circular-progressbar // Dung de hien thi vong tron phan tram
 import { CircularProgressbar, buildStyles } from 'react-circular-progressbar';
 import 'react-circular-progressbar/dist/styles.css'
+
+// Any:
+import "./trending.scss";
+import "./trending_responsive.scss";
 
 
 function Trending() {
@@ -23,6 +30,9 @@ function Trending() {
             })
             .catch((err) => console.log("error: ", err));
     }, []);
+
+    //---------------------------------------------- Render data from backend ----------------------------------------------//
+
     const renderFilmLeft = () => {
         return filmLeft.map((item1, index) => {
             // Ham random tinh toan min max
